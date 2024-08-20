@@ -10,6 +10,85 @@
   width: 100%;
 }
 
+body {
+  background-color: #ffffff;
+  color: #213547;
+}
+
+.texto{
+  color: #242424;
+}
+
+.navbar-light {
+  background-color: #f8f9fa;
+}
+
+.card {
+  background-color: #ffffff;
+  color: #213547;
+}
+
+.btn-outline-light {
+  border-color: #f8f9fa;
+  color: #f8f9fa;
+}
+
+.btn-outline-light:hover {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Estilos gerais para o modo escuro */
+.dark-mode {
+  background-color: #242424;
+}
+
+.dark-mode body {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.dark-mode .navbar-dark {
+  background-color: #333!important;
+}
+
+.dark-mode .card {
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.dark-mode input, .dark-mode button {
+  background-color: #333;
+  color: #fff;
+  border-color: #fff;
+}
+
+.dark-mode .btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.dark-mode .texto{
+  color: #fff;
+}
+
+
+
+.dark-mode .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+input::placeholder {
+  color: #242424;
+}
+
+.dark-mode input::placeholder {
+  color: #fff;
+}
+
+
+
+
 .header {
   display: flex;
   justify-content: space-between;
