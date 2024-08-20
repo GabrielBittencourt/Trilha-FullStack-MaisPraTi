@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center; 
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 14px 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  color: #f2f2f2;
+  font-size: 1.5em;
+}
+
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #333;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.icon {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+/* Estilos para o card */
+.card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: auto;
+  min-width: 300px;
+  max-width: 90%;
+}
+
+ol {
+  background: #3399ff;
+  padding: 20px;
+  list-style: none;
+  border-radius: 8px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+ol li {
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.button {
+  background: #3399ff;
+  margin: 20px 0;
+  border: black solid 2px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button:hover {
+  background: black;
+  border: #3399ff solid 2px;
+  color: #3399ff;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  
+}
+
+.contador{
+  color: #3399ff;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+.topnav a.icon {
+    display: block;
+    cursor: pointer;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+.topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+.topnav.responsive a {
+    display: block;
+    text-align: left;
+    padding: 14px;
+    width: 100%;
+  }
+}
