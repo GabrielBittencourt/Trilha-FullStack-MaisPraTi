@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #141414;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .navbar-search input {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+  }
+  

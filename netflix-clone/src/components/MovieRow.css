@@ -1,0 +1,25 @@
+.movie-row {
+    margin: 20px 0;
+  }
+  
+  .movie-row h2 {
+    margin-left: 20px;
+  }
+  
+  .movie-row__posters {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+  }
+  
+  .movie-row__poster {
+    max-height: 200px;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .movie-row__poster:hover {
+    transform: scale(1.08);
+  }
+  
