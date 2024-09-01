@@ -1,16 +1,37 @@
-import React from 'react';
+// src/pages/Home.jsx
+import React, { useState, useEffect } from 'react';
+import { getMoviesByCategory } from '../api/tmdb';
 import MovieRow from '../components/MovieRow';
 
-function Home() {
+const Home = () => {
+  const [movies, setMovies] = useState([]);
+  const [categories] = useState(['popular', 'top_rated', 'upcoming']); // Exemplo de categorias
+
+  useEffect(() => {
+    const fetchMovies = async () => {
+      try {
+        const promises = categories.map(category => getMoviesByCategory(category));
+        const results = await Promise.all(promises);
+        setMovies(results);
+      } catch (error) {
+        console.error('Erro ao buscar filmes:', error);
+      }
+    };
+
+    fetchMovies();
+  }, [categories]);
+
   return (
-    <div>
-      <MovieRow title="Populares" category="popular" />
-      <MovieRow title="Mais Votados" category="top_rated" />
-      <MovieRow title="Ação" category="action" />
-      <MovieRow title="Comédia" category="comedy" />
-      {/* Adicione mais categorias conforme necessário */}
+    <div className="container">
+      {categories.map((category, index) => (
+        <MovieRow
+          key={category}
+          title={category.replace('_', ' ')}
+          movies={movies[index] || []}
+        />
+      ))}
     </div>
   );
-}
+};
 
 export default Home;

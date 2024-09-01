@@ -2,13 +2,15 @@
     padding: 20px;
   }
   
-  .details h1 {
+  h1 {
     font-size: 32px;
     margin-bottom: 20px;
+    color: white;
   }
   
-  .details p {
+  p {
     font-size: 18px;
     margin-bottom: 10px;
+    color: white;
   }
   
