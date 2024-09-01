@@ -10,10 +10,13 @@
     font-size: 24px;
     font-weight: bold;
     color: red;
+    margin: 5px 10px;
+    text-decoration: none;
   }
   
   .navbar-search input {
     padding: 5px;
+    margin: 5px 10px;
     font-size: 16px;
     border-radius: 4px;
     border: none;

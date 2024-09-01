@@ -1,105 +1,32 @@
-
 .movie-row {
-  margin-bottom: 2rem;
+  margin: 20px 0;
+  overflow: hidden;
 }
-
-.movie-card-container {
-  flex: 1 0 20%; /* Ajuste a porcentagem para controlar o número de cartões visíveis por slide */
-  margin: 0 5px; /* Ajuste o espaçamento entre os cartões */
-  position: relative;
-  text-decoration: none; /* Remove underline from link */
-}
-
-.movie-card {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  object-fit: cover; /* Garante que a imagem se ajuste ao tamanho do cartão */
-}
-
-.movie-card-container:hover .movie-card {
-  transform: scale(1.05);
-}
-  .movie-row h2 {
-    margin-left: 20px;
-  }
-  
-  .movie-row__posters {
-    display: flex;
-    overflow-x: scroll;
-    padding: 20px;
-  }
-  
-  .movie-row__poster {
-    max-height: 200px;
-    object-fit: contain;
-    margin-right: 10px;
-    transition: transform 0.2s;
-  }
-  
-  .movie-row__poster:hover {
-    transform: scale(1.08);
-  }
-
-  /* src/components/MovieRow.css */
 
 .movie-row h2 {
   margin-bottom: 20px;
-  color: #fff;
+  color: white;
 }
 
-.movie-carousel .carousel-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel-item-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.movie-card {
-  width: 18rem;
-  margin: 10px;
-  border: none;
+.movie-card-container {
+  flex: 0 0 calc(20% - 5px);
+  padding: 0 10px;
   transition: transform 0.3s ease;
 }
 
-.movie-card:hover {
+.movie-card-container:hover {
   transform: scale(1.05);
 }
 
-.movie-card img {
-  object-fit: cover;
-  height: 300px; /* Ajuste a altura conforme necessário */
+
+.movie-card {
+  width: 100%;
+  border-radius: 10px;
 }
 
-.carousel-control-prev {
-  transform: translateX(-45%);
+.carousel-control-prev{
+  transform: translateX(-15%);
 }
-
 .carousel-control-next{
-  transform: translateX(45%);
+  transform: translateX(5%);  
 }
-
-.carousel-item {
-  padding: 0 10px; /* Ajuste o padding horizontal se necessário */
-}
-
-.carousel-inner {
-  display: flex;
-}
-
-.carousel-item {
-  display: flex;
-}
-
-
-
-/* Opcional: ajuste a aparência do botão */
-
-  

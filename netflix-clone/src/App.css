@@ -23,12 +23,7 @@ body {
     z-index: -1; /* Garante que a sobreposição fique atrás do conteúdo */
   }
   
-  /* Ajusta o container para garantir que o texto fique visível sobre o fundo */
-  .container {
-    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo semi-transparente para melhor legibilidade */
-    padding: 20px;
-    border-radius: 10px;
-  }
+
   
   /* Outros estilos para garantir a legibilidade e o layout */
   .movie-row {
